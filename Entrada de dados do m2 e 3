@@ -1,0 +1,279 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+/////
+//Assinatura das funções
+
+void telaSobre(void);
+void telaPrincipal(void);
+void telaEquipe(void);
+void telaMenuPacientes(void);
+void telaCadastrarPacientes(void);
+void telaPesquisarPacientes(void);
+void telaAlterarPacientes(void);
+void telaExcluirPacientes(void);
+
+/////
+//Programa principal
+
+int main(void) {
+    telaSobre();
+    telaEquipe();
+    telaPrincipal();
+    telaCadastrarPacientes();
+    telaPesquisarPacientes();
+    telaAlterarPacientes();
+    telaExcluirPacientes();
+    return 0;
+}
+
+/////
+// Funções
+
+void telaSobre(void) {
+    system("limpar||cls");
+    printf("\n");
+    printf("////////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                                  ///\n");
+    printf("///               Universidade Federal do Rio Grande do Norte                        ///\n");
+    printf("///               Centro de Ensino Superior do Seridó                                ///\n");
+    printf("///               Departamento de Computação e Tecnologia                            ///\n");
+    printf("///               Disciplina DCT1106 - Programação                                   ///\n");
+    printf("///               Projeto Sistema de Planejamento de Dieta                           ///\n");
+    printf("///               Desenvolvido por mariana - Nov, 2021                               ///\n");
+    printf("///                                                                                  ///\n");
+    printf("////////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                                  ///\n");
+    printf("///       = = = = = = = = = Sistema de Planejamento de Dieta = = = = = = = =         ///\n");
+    printf("///                                                                                  ///\n");
+    printf("///       Programa  utilizado na disciplina DCT1106 - Programação, para fins         ///\n");
+    printf("///       avaliativo no Semestre 2021.2. O programa contém os principais módulos     ///\n");
+    printf("///       e funcionalidades que serão exigidos ao longo da disciplina.               ///\n");
+    printf("///                                                                                  ///\n");
+    printf("////////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaPrincipal(void) {
+    char op;
+
+    system("limpar||cls");
+    printf("\n");
+     printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                         ///\n");
+    printf("///          Universidade Federal do Rio Grande do Norte                    ///\n");
+    printf("///          Centro de Ensino Superior do Seridó                            ///\n");
+    printf("///          Departamento de Computação e Tecnologia                        ///\n");
+    printf("///          Disciplina DCT1106 - Programação                               ///\n");
+    printf("///          Projeto Sistema de Planejamento de Dieta                       ///\n");
+    printf("///          Desenvolvido por mariana - Nov, 2021                           ///\n");
+    printf("///                                                                         ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                         ///\n");
+    printf("///         = = = = = = Sistema de Planejamento de Dieta = = = = = =        ///\n");
+    printf("///                                                                         ///\n");
+    printf("///             1. Módulo Cardápio                                          ///\n");
+    printf("///             2. Módulo Paciente                                          ///\n");
+    printf("///             3. Módulo Exame                                             ///\n");
+    printf("///             4. Módulo Relatórios                                        ///\n");
+    printf("///             5. Módulo Sobre                                             ///\n");
+    printf("///             0. Sair                                                     ///\n");
+    printf("///                                                                         ///\n");  
+    printf("///             Escolher a opção desejada: ");                                
+    scanf("%c", &op);
+    getchar();
+    printf("///                                                                         ///\n");
+    printf("///                                                                         ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("\ n");
+    printf("\ t \ t \ t >>> Tecle <ENTER> para continuar ... \ n");
+    getchar();
+}
+
+
+
+void telaEquipe(void) {
+    system("limpar||cls")
+    printf("\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                         ///\n");
+    printf("///          Universidade Federal do Rio Grande do Norte                    ///\n");
+    printf("///          Centro de Ensino Superior do Seridó                            ///\n");
+    printf("///          Departamento de Computação e Tecnologia                        ///\n");
+    printf("///          Disciplina DCT1106 - Programação                               ///\n");
+    printf("///          Projeto Sistema de Planejamento de Dieta                       ///\n");
+    printf("///          Desenvolvido por mariana - Nov, 2021                           ///\n");
+    printf("///                                                                         ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                         ///\n");
+    printf("///       = = = = = = Sistema de Planejamento de Dieta = = = = = =          ///\n");
+    printf("///                                                                         ///\n");
+    printf("///             Este projeto exemplo foi desenvolvido por:                  ///\n");
+    printf("///                                                                         ///\n");
+    printf("///             Mariana Araújo de Medeiros                                  ///\n");
+    printf("///             E-mail: mariana.medeiros.017@ufrn.edu.br                    ///\n");
+    printf("///             Repositório: https://github.com/ Got7mj/mariana             ///\n");
+    printf("///                                                                         ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("\ n");
+    printf("\ t \ t \ t >>> Tecle <ENTER> para continuar ... \ n");
+    getchar();
+}
+
+
+
+void telaMenuPaciente(void) {
+    char op;
+    
+    sistema("limpar||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                               ///\n");
+    printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                  = = = = = = = = = Menu Paciente = = = = = = = = =            ///\n");
+    printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                               ///\n");
+    printf("///                   1. Cadastrar um novo Paciente                               ///\n");
+    printf("///                   2. Pesquisar por Paciente                                   ///\n");
+    printf("///                   3. Atualizar o cadastro de um Paciente                      ///\n");
+    printf("///                   4. Excluir um paciente do sistema                           ///\n");
+    printf("///                   0. Voltar ao menu anterior                                  ///\n");
+    printf("///                                                                               ///\n");
+    printf("///                   Escolha a opção desejada:
+    scanf("%c", &op);
+    getchar(); 
+    printf("///                                                                               ///\n");
+    printf("///                                                                               ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaCadastrarPaciente(void) {
+    char CPF[12];
+    char nome[51];
+    char idade[12];
+    char peso[12];
+    char alt[12];
+    char email[51];
+    char nasc[11];
+    char celular[12];
+    
+    sistema("limpar||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                               ///\n");
+    printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =              ///\n");
+    printf("///                = = = = = = = = Cadastrar Paciente = = = = = = = =             ///\n");
+    printf("///                 = = = = = = = = = = = = = = = = = = = = = = = =               ///\n");
+    printf("///                                                                               ///\n");
+    printf("///                  CPF (apenas números): ");
+    scanf("%[0-9]", CPF);
+    getchar();
+    printf("///                  Nome completo: ");
+    scanf("%[A-ZÁÉÍÓÚÂÊÔÇÀÃÕ a-záéíóúâêôçàãõ]", nome);
+    getchar();
+    printf("///                  Idade: ");
+    scanf("%[0-9]", idade);
+    getchar();
+    printf("///                  Peso: ");
+    scanf("%[0-9]", peso);
+    getchar();
+    printf("///                  Altura: ");
+    scanf("%[0-9]", alt);
+    getchar();
+    printf("///                  E-mail: ");
+    scanf("%[A-Za-z0-9@._]", email);
+    getchar();
+    printf("///                  Data de Nascimento (dd/mm/aaaa): ");  
+    scanf("%[0-9]", nasc);
+    getchar();
+    printf("///                  Celular (apenas números):  ");
+    scanf("%[0-9]", celular);
+    getchar();
+    printf("///                                                                               ///\n");
+    printf("///                                                                               ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaProcurarPaciente(void) {
+    char CPF[12];
+    
+    sistema("limpar||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                               ///\n");
+    printf("///               = = = = = = = = = = = = = = = = = = = = = = = =                 ///\n");
+    printf("///             = = = = = = = = Pesquisar Paciente = = = = = = = =                ///\n");
+    printf("///               = = = = = = = = = = = = = = = = = = = = = = = =                 ///\n");
+    printf("///                                                                               ///\n");
+    printf("///                  Informe o CPF (apenas números): ");
+    scanf("%[0-9]", CPF);
+    getchar();
+    printf("///                                                                               ///\n");
+    printf("///                                                                               ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaAlterarPciente(void) {
+    char cpf[12];
+    
+    sistema("limpar||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                               ///\n");
+    printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =              ///\n");
+    printf("///                = = = = = = = = alterar Paciente = = = = = = = = =             ///\n");
+    printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =              ///\n");
+    printf("///                                                                               ///\n");
+    printf("///                   Informe o CPF (apenas números): ");
+    scanf("%[0-9]", CPF);
+    getchar();
+    printf("///                                                                               ///\n");
+    printf("///                                                                                ///n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaExcluirPaciente(void) {
+    char cpf[12];
+    
+    sistema("limpar||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                               ///\n");
+    printf("///                = = = = = = = = = = = = = = = = = = = = = = = =                ///\n");
+    printf("///              = = = = = = = = Excluir Paciente = = = = = = = = =               ///\n");
+    printf("///               = = = = = = = = = = = = = = = = = = = = = = = =                 ///\n");
+    printf("///                                                                               ///\n");
+    printf("///               Informe o CPF (apenas números):
+    scanf("%[0-9]", CPF);
+    getchar();
+    printf("///                                                                               ///\n");
+    printf("///                                                                               ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
