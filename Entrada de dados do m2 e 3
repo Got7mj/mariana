@@ -12,6 +12,11 @@ void telaCadastrarPacientes(void);
 void telaPesquisarPacientes(void);
 void telaAlterarPacientes(void);
 void telaExcluirPacientes(void);
+void telaMenuReceitas(void);
+void telaCadastrarReceitas(void);
+void telaAlterarReceitas(void);
+void telaPesquisarReceitas(void);
+void telaExcluirReceitas(void);
 
 /////
 //Programa principal
@@ -24,6 +29,11 @@ int main(void) {
     telaPesquisarPacientes();
     telaAlterarPacientes();
     telaExcluirPacientes();
+    telaMenuReceitas();
+    telaCadastrarReceitas();
+    telaAlterarReceitas();
+    telaPesquisarReceitas();
+    telaExcluirReceitas();
     return 0;
 }
 
@@ -78,9 +88,8 @@ void telaPrincipal(void) {
     printf("///                                                                         ///\n");
     printf("///             1. Módulo Cardápio                                          ///\n");
     printf("///             2. Módulo Paciente                                          ///\n");
-    printf("///             3. Módulo Exame                                             ///\n");
-    printf("///             4. Módulo Relatórios                                        ///\n");
-    printf("///             5. Módulo Sobre                                             ///\n");
+    printf("///             3. Módulo Receita                                           ///\n");
+    printf("///             4. Módulo Sobre                                             ///\n");
     printf("///             0. Sair                                                     ///\n");
     printf("///                                                                         ///\n");  
     printf("///             Escolher a opção desejada: ");                                
@@ -240,7 +249,7 @@ void telaAlterarPciente(void) {
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
     printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =              ///\n");
-    printf("///                = = = = = = = = alterar Paciente = = = = = = = = =             ///\n");
+    printf("///                = = = = = = = = Alterar Paciente = = = = = = = = =             ///\n");
     printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =              ///\n");
     printf("///                                                                               ///\n");
     printf("///                   Informe o CPF (apenas números): ");
@@ -269,6 +278,109 @@ void telaExcluirPaciente(void) {
     printf("///                                                                               ///\n");
     printf("///               Informe o CPF (apenas números):
     scanf("%[0-9]", CPF);
+    getchar();
+    printf("///                                                                               ///\n");
+    printf("///                                                                               ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+void telaMenuReceitas(void) {
+    char op;
+    
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                               ///\n");
+    printf("///               = = = = = = = = = = = = = = = = = = = = = = = =                 ///\n");
+    printf("///            = = = = = = = = = = Menu Receita = = = = = = = = = = =             ///\n");
+    printf("///              = = = = = = = = = = = = = = = = = = = = = = = = =                ///\n");
+    printf("///                                                                               ///\n");
+    printf("///              1. Cadastrar Receita                                             ///\n");
+    printf("///              2. Pesquisar Receita                                             ///\n");
+    printf("///              3. Alterar Receita                                               ///\n");
+    printf("///              3. Excluir Receita                                               ///\n");
+    printf("///              0. Voltar ao menu anterior                                       ///\n");
+    primtf("///                                                                               ///\n");
+    printf("///              Escolha a opção desejada:                                        
+    scanf("%c", &op);
+    getchar(); 
+    printf("///                                                                               ///\n");
+    printf("///                                                                               ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle<ENTER> para continuar...\n");
+    getchar();
+    }
+    
+    
+    
+void telaCadastrarReceita(void) {
+    char num[12];
+    char criação[11];
+    
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                               ///\n");
+    printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                  = = = = = = = = Cadastrar Receita = = = = = = = =            ///\n");
+    printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                               ///\n");
+    printf("///                  Numeração (apenas números): ");  
+    scanf("%[0-9]", num);
+    getchar();
+    printf("///                  Data da Criação (dd/mm/aaaa): ");
+    scanf("%[0-9]", criação);
+    getchar();
+    printf("///                                                                               ///\n");
+    printf("///                                                                               ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaAlterarReceita(void) {
+    char num[12];
+    
+    sistema("limpar||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                               ///\n");
+    printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =              ///\n");
+    printf("///                = = = = = = = = Alterar Receita = = = = = = = = =              ///\n");
+    printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =              ///\n");
+    printf("///                                                                               ///\n");
+    printf("///                  Informe a numeração(apenas números): 
+    scanf("%[0-9]", num);
+    getchar();
+    printf("///                                                                               ///\n");
+    printf("///                                                                               ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaExcluirReceita(void) {
+    char num[12];
+    
+    sistema("limpar||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                               ///\n");
+    printf("///                 = = = = = = = = = = = = = = = = = = = = = = = =               ///\n");
+    printf("///               = = = = = = = = Excluir Receita = = = = = = = = =               ///\n");
+    printf("///                 = = = = = = = = = = = = = = = = = = = = = = = =               ///\n");
+    printf("///                                                                               ///\n");
+    printf("///                 Informe a numeração (apenas números): 
+    scanf("%[0-9]", num);
     getchar();
     printf("///                                                                               ///\n");
     printf("///                                                                               ///\n");
