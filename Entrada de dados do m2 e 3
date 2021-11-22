@@ -218,7 +218,7 @@ void telaCadastrarPaciente(void) {
 
 
 
-void telaProcurarPaciente(void) {
+void telaPesquisarPaciente(void) {
     char CPF[12];
     
     sistema("limpar||cls");
