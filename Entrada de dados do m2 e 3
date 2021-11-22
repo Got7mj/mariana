@@ -242,7 +242,7 @@ void telaPesquisarPaciente(void) {
 
 
 
-void telaAlterarPciente(void) {
+void telaAlterarPaciente(void) {
     char cpf[12];
     
     sistema("limpar||cls");
