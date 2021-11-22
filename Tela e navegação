@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+//////
+////// Assinaturas das funções
+//////
+	
+char telaPrincipal(void);
+void telaSobre(void);
+void telaEquipe(void);
+
+void moduloCardáio(void);
+char telaMenuCardápio(void);
+void telaCadastrarCardápio(void);
+void telaPesquisarCardápio(void);
+void telaAlterarCardápio(void);
+void telaExcluirCardápio(void);
+
+void moduloPaciente(void);
+char telaMenuPaciente(void);
+void telaCadastrarPaciente(void);
+void telaPesquisarPaciente(void);
+void telaAlterarPaciente(void);
+void telaExcluirPaciente(void);
+
+void moduloReceita(void);
+char telaMenuReceita(void);
+void telaCadastrarReceita(void);
+
