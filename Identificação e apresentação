@@ -63,7 +63,7 @@ void  telaPrincipal(void) {
     printf("///             1. Módulo Cardápio                                                   ///\n");
     printf("///             2. Módulo Paciente                                                   ///\n");
     printf("///             3. Módulo Receita                                                    ///\n");
-    printf("///                4. Módulo Relatórios                                              ///\n");
+    printf("///             4. Módulo Relatórios                                                 ///\n");
     printf("///             5. Módulo Sobre                                                      ///\n");
     printf("///             0. Sair                                                              ///\n");
     printf("///                                                                                  ///\n");
