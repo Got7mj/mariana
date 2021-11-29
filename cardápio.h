@@ -15,7 +15,7 @@
 ////// Assisnaturas das funcões Módulo Cardápio
 //////
 
-void moduloCardápio(void);
+void moduloCardapio(void);
 char telaMenuCardápio(void);
 void telaCadastrarCardápio(void);
 void telaPesquisarCardápio(void);
