@@ -10,7 +10,7 @@ char telaPrincipal(void);
 void telaSobre(void);
 void telaEquipe(void);
 
-void moduloCardáio(void);
+void moduloCardápio(void);
 char telaMenuCardápio(void);
 void telaCadastrarCardápio(void);
 void telaPesquisarCardápio(void);
