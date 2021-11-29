@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include<stdlib.h>
 
-/////
-//Assinatura das funções
+///////
+///Assinatura das funções
+//////
+
 
 void telaSobre(void);
 void telaPrincipal(void);
