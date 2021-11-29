@@ -16,8 +16,8 @@
 //////
 
 void moduloCardapio(void);
-char telaMenuCardápio(void);
-void telaCadastrarCardápio(void);
-void telaPesquisarCardápio(void);
-void telaAlterarCardápio(void);
-void telaExcluirCardápio(void);
+char telaMenuCardapio(void);
+void telaCadastrarCardapio(void);
+void telaPesquisarCardapio(void);
+void telaAlterarCardapio(void);
+void telaExcluirCardapio(void);
