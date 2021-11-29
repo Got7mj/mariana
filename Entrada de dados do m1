@@ -7,8 +7,8 @@
 void telaSobre(void);
 void telaPrincipal(void);
 void telaEquipe(void);
-void telaMenuCardápio(void);
-void telaCadastrarcCardápio(void);
+void telaMenuCardapio(void);
+void telaCadastrarcCardapio(void);
 void telaPesquisarCardápio(void);
 void telaAlterarCardápio(void);
 void telaExcluirCardápio(void);
