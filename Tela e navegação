@@ -24,7 +24,7 @@ void telaPesquisarPaciente(void);
 void telaAlterarPaciente(void);
 void telaExcluirPaciente(void);
 
-void moduloReceita(void);moduloReceita(void);
+void moduloReceita(void);
 char telaMenuReceita(void);
 void telaCadastrarReceita(void);
 void telaPesquisarRceita(void);
