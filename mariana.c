@@ -5,4 +5,16 @@
 
 
 
-Void telasobre(Void);
+//////
+////// Assisnaturas das funções
+//////
+
+char telaPrincipal(void);
+void telaSobre(void);
+void telaEquipe(void);
+
+
+
+//////
+////// Programa principal
+//////
