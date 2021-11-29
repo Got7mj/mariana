@@ -64,7 +64,7 @@ void telaPrincipal(void) {
 
     system("clear||cls");
     printf("\n");
-     printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
     printf("///          Universidade Federal do Rio Grande do Norte                    ///\n");
     printf("///          Centro de Ensino Superior do Seridó                            ///\n");
