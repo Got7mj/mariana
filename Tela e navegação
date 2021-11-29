@@ -41,19 +41,19 @@ int main(void) {
     do {
         opcao = telaPrincipal();
         switch(opcao) {
-	 case'1': moduloCardáio();
-	 	  break;
-	 case'2': moduloPaciente();
-	 	   break;
-	 case'3': moduloReceita();
-	 	  break;
-	 case'4': // Módulo Relatórios
-                  break;
-	 case'5': telaSobre();
-                  telaEquipe();
-                  break;
-        } 	
-    } while (opcao != '0');
+	    case '1':   moduloCardáio();
+	 	        break;
+	    case '2':   moduloPaciente();
+	 	        break;
+	    case '3':   moduloReceita();
+	 	        break;
+	    case '4':   // Módulo Relatórios
+                        break;
+	    case '5':   telaSobre();
+                        telaEquipe();
+                        break;
+       } 	
+   } while (opcao != '0');
 
     return 0;
 }
@@ -69,7 +69,7 @@ int main(void) {
 char telaPrincipal(void) {
     char op;
 
-    system("limpar||cls");
+    system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                                   ///\n");
@@ -106,7 +106,7 @@ char telaPrincipal(void) {
 
 
 void telaSobre(void) {
-    sistema("limpar || cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                                   ///\n");
@@ -134,7 +134,7 @@ void telaSobre(void) {
 
 
 void telaEquipe(void) {
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                                   ///\n");
@@ -189,7 +189,7 @@ void moduloCardáio(void);
 void telaMenuCardápio(void) {
     char op;
     
-    system("limpar||cls")
+    system("clear||cls")
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -223,7 +223,7 @@ void telaCadastrarCardápio(void) {
     char num[12];
     char criação[11];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -250,7 +250,7 @@ void telaCadastrarCardápio(void) {
 void telaPesquisarCardápio(void) {
     char num[12];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -274,7 +274,7 @@ void telaPesquisarCardápio(void) {
 void telaAlterarCardápio(void) {
     char num[12];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -298,7 +298,7 @@ void telaAlterarCardápio(void) {
 void telaExcluirCardápio(void) {
     char num[12];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -345,7 +345,7 @@ void moduloPaciente(void);
 void telaMenuPaciente(void) {
     char op;
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -382,7 +382,7 @@ void telaCadastrarPaciente(void) {
     char nasc[11];
     char celular[12];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -427,7 +427,7 @@ void telaCadastrarPaciente(void) {
 void telaPesquisarPaciente(void) {
     char CPF[12];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -451,7 +451,7 @@ void telaPesquisarPaciente(void) {
 void telaAlterarPaciente(void) {
     char cpf[12];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -475,7 +475,7 @@ void telaAlterarPaciente(void) {
 void telaExcluirPaciente(void) {
     char cpf[12];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -577,7 +577,7 @@ void telaCadastrarReceita(void) {
 void telaPesquisarReceita(void) {
     char num[12];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -601,7 +601,7 @@ void telaPesquisarReceita(void) {
 void telaAlterarReceita(void) {
     char num[12];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
@@ -625,7 +625,7 @@ void telaAlterarReceita(void) {
 void telaExcluirReceita(void) {
     char num[12];
     
-    sistema("limpar||cls");
+    sistema("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                               ///\n");
