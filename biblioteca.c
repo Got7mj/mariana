@@ -1,6 +1,6 @@
 #include <time.h>
 #include <stdlib.h>
-
+#include <string.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -21,6 +21,8 @@ void delay(int segundos) {
 ///
 void limpaTela(void) {
   if (system("clear") || system("cls")) {
+	  
+	// limpa a tela, funciona em Linux, Mac e Windows
   }
 }
 
@@ -101,6 +103,11 @@ int ehData(int dd, int mm, int aa) {
 /// retorna 0 caso contrário
 ///
 int validarNome(char* nome) {
+  for (int i=0; nome[i]!='\0'; i++) {
+    if (!ehLetra(nome[i])) {
+      return 0;
+    }
+  }
 	return 1;
 }
 
@@ -111,7 +118,32 @@ int validarNome(char* nome) {
 /// (apenas dígitos) ou retorna 0 caso contrário
 ///
 int validarCPF(char* CPF) {
-	return 1;
+  tam = len(cpf)
+  soma = 0
+  d1 = 0
+  d2 = 0
+  if tam != 11:
+    return 0
+  for i in range(11):
+    if (cpf[i] < '0') or (cpf[i] > '9'):
+      return 0
+  for i in range(9):
+    soma += (int(cpf[i]) * (10 - i))
+  d1 = 11 - (soma % 11)
+  if (d1 == 10 or d1 == 11):
+    d1 = 0
+  if d1 != int(cpf[9]):
+    return 0
+  soma = 0
+  for i in range(10):
+    soma += (int(cpf[i]) * (11 - i))
+  d2 = 11 - (soma%11)
+  if (d2 == 10 or d2 == 11):
+    d2 = 0
+  if d2 != int(cpf[10]):
+    return 0
+
+  return 1;
 } 
 
 
@@ -131,7 +163,24 @@ int validarEmail(char* email) {
 /// e no formato: ddmmaaaa) ou retorna 0 caso contrário
 ///
 int validarData(char* data) {
-	return 1;
+  int tam, dia, mes, ano;
+  tam = strlen(data);
+  if (tam != 8) {
+    return 0;
+  }
+  for (int i = 0; i < tam; i++) {
+    if (!ehDigito(data[i])) {
+      return 0;
+    }
+  }
+  dia = (data[0] - '0') * 10 + (data[1] - '0');
+  mes = (data[2] - '0') * 10 + (data[3] - '0');
+  ano = (data[4] - '0') * 1000 + (data[5] - '0') * 100 + 
+        (data[6] - '0') * 10 + (data[7] - '0');
+  if (!ehData(dia, mes, ano)) {
+    return 0;
+  }
+  return 1;
 }
 
 
@@ -141,8 +190,18 @@ int validarData(char* data) {
 /// (apenas dígitos) ou retorna 0 caso contrário
 ///
 int validarcelular(char* celular) {
-	return 1;
-} 
+  int tam;
+  tam = strlen(celular);
+  if (tam != 11) {
+    return 0;
+  }
+  for (int i = 0; i < tam; i++) {
+    if (!ehDigito(celular[i])) {
+        return 0;
+    }
+  }
+  return 1;
+}
 
 
 
