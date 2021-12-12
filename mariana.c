@@ -1,7 +1,11 @@
-#include<unistd.h>
-#include"cardápio.h"
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include"cardapio.h"
 #include"paciente.h"
 #include"receita.h"
+#include"biblioteca.h"
+#include"relatorio.h"
 
 
 
@@ -15,13 +19,17 @@ void telaEquipe(void);
 
 
 
+void moduloRelatorios(void);
+void delay(int);
+
+
+
 //////
 ////// Programa principal
 //////
 
 int main(void) {
   char opcao;
-  
   do {
      opcao = telaPrincipal();
      switch(opcao) {
@@ -75,14 +83,14 @@ char telaPrincipal(void) {
     printf("///               5. Módulo Sobre                                               ///\n");
     printf("///               0. Sair                                                       ///\n");
     printf("///                                                                             ///\n");
+    printf("///               Escolha a opção desejada: ");
     scanf("%c", &op);
     getchar();
     printf("///                                                                             ///\n");
     printf("///                                                                             ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
-    printf("\t\t\t<<< ... Aguarde ... >>>\n");
-    sleep(1);
+    delay(1);
     return op;
 }
 
@@ -143,4 +151,11 @@ void telaEquipe(void) {
     printf("\n");
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
+}
+
+
+
+void moduloRelatorio(void) {
+	// modulo em desenvolvimento
+
 }
