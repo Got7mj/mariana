@@ -4,18 +4,18 @@
 #include "aluno.h"
 #include "biblioteca.h"
 
-void moduloCardápio(void) {
+void moduloCardapio(void) {
     char opção;
     do {
-         opção = menuCardápio();
+         opção = menuCardapio();
          switch(opção) {
-             case '1':  telaCadastrarCardápio();
+             case '1':  telaCadastrarCardapio();
                         break;
-             case '2':  telaPesquisarCardápio();
+             case '2':  telaPesquisarCardapio();
                         break;
-             case '3':  telaAlterarCardápio();
+             case '3':  telaAlterarCardapio();
                         break;
-             case '4':  telaExcluircCardápio();
+             case '4':  telaExcluircCardapio();
                         break;
          }
     }while (opcao != '0');
@@ -26,32 +26,32 @@ void moduloCardápio(void) {
 void cadastrarCardápio(void) {
         // função ainda em desenvolvimento
         // exibe a tela apenas para testes
-        telaCadastrarCardápio();
+        telaCadastrarCardapio();
 }
 
 
 void pesquisarCardápio(void) {
         // função ainda em desenvolvimento
         // exibe a tela apenas para testes
-        telaPesquisarCardápio();
+        telaPesquisarCardapio();
 }
 
 
 void alterarCardápio(void) {
         // função ainda em desenvolvimento
         // exibe a tela apenas para testes
-        telaAlterarCardápio();
+        telaAlterarCardapio();
 }
 
 
 void excluirCardápio(void) {
         // função ainda em desenvolvimento
         // exibe a tela apenas para testes
-        void telaExcluirCardápio();
+        void telaExcluirCardapio();
 }
 
 
-char menuCardápio(void) {
+char menuCardapio(void) {
         char op;
     sistema("clear||cls");
         printf("\n");
@@ -82,7 +82,7 @@ char menuCardápio(void) {
 
            
  
-void telaCadastrarCardápio(void) {
+void telaCadastrarCardapio(void) {
         char num[12];
         char criação[11];
     
@@ -113,7 +113,7 @@ void telaCadastrarCardápio(void) {
 
            
            
-void telaPesquisarCardápio(void) {
+void telaPesquisarCardapio(void) {
     char num[12];
     
     sistema("clear||cls");
@@ -136,7 +136,7 @@ void telaPesquisarCardápio(void) {
            
 
            
-void telaAlterarCardápio(void) {
+void telaAlterarCardapio(void) {
     char num[12];
     
     sistema("clear||cls");
@@ -159,7 +159,7 @@ void telaAlterarCardápio(void) {
 
 
 
-void telaExcluirCardápio(void) {
+void telaExcluirCardapio(void) {
     char num[12];
     
     sistema("clear||cls");
