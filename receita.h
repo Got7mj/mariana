@@ -21,3 +21,7 @@ void telaCadastrarReceita(void);
 void telaPesquisarRceita(void);
 void telaAlterarRceita(void);
 void telaExcluirRceita(void);
+void CadastrarReceita(void);
+void PesquisarRceita(void);
+void AlterarRceita(void);
+void ExcluirRceita(void);
