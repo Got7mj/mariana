@@ -153,7 +153,7 @@ int validarcelular(char* celular) {
 int validarNum(char* num) {
   int tam;
   tam = strlen(num);
-  if (tam < 10 || tam > 11) {
+  if (tam < 1000 || tam > 1001) {
     return 0;
   }
   for (int i = 0; i < tam; i++) {
