@@ -8,7 +8,7 @@ void moduloRelatorio(void) {
     do {
          opção = menuRelatorio();
          switch(opção) {
-             case '1':  Paciente();
+             case '1':  Desenvolvimentodopaciente();
                         break;
              case '2':  Avaliacaoclinica();
                         break;
@@ -21,10 +21,10 @@ void moduloRelatorio(void) {
 }
 
 
-void Paciente(void) {
+void Desenvolvimentodopaciente(void) {
 	// função ainda em desenvolvimento
 	// exibe a tela apenas para testes
-	telaPaciente();
+	telaDesenvolvimentodopaciente();
 }
 
 
@@ -51,17 +51,17 @@ void Dieta(void) {
 
 
 char menuRelatorio(void) {
-    char op;
+	char op;
     
     system("clear||cls")
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                                         ///\n");
-    printf("///                       = = = = = = = = = = = = = = = = = = = = = =                       ///\n");
-    printf("///                     = = = = = = = = Menu Relatório = = = = = = = =                      ///\n");
-    printf("///                       = = = = = = = = = = = = = = = = = = = = = =                       ///\n");
-    printf("///                     = = = = = = = = = Menu Relatório = = = = = = = =                    ///\n");
-    printf("///                      = = = = = = = = = = = = = = = = = = = = = = =                      ///\n");
+    printf("///                       = = = = = = = = = = = = = = = = = = = = =                         ///\n");
+    printf("///                     = = = = = = = = Menu Relatório = = = = = = =                        ///\n");
+    printf("///                       = = = = = = = = = = = = = = = = = = = = =                         ///\n");
+    printf("///                     = = = = = = = = = Menu Relatório = = = = = =                        ///\n");
+    printf("///                      = = = = = = = = = = = = = = = = = = = = =                          ///\n");
     printf("///                                                                                         ///\n");
     printf("///                1. Desenvolvimento apresentado pelo paciente ao decorrer da dieta        ///\n");
     printf("///                2. Avaliação clinica                                                     ///\n");
@@ -81,7 +81,111 @@ char menuRelatorio(void) {
 }
 
 
-           
+ 
+void telaDesenvolvimentodopaciete(void) {
+	char CPF[12];
+	
+	system("clear||cls")
+    	printf("\n");
+    	printf("///////////////////////////////////////////////////////////////////////////////////\n");
+    	printf("///                                                                             ///\n");
+	printf("///               = = = = = = = = = = = = = = = = = = = = = = =                 ///\n");
+	printf("///              = = = = = Desenvolvimento do paciente = = = = =                ///\n");
+	printf("///               = = = = = = = = = = = = = = = = = = = = = = =                 ///\n");
+	printf("///                                                                             ///\n");
+	printf("///           Informe o CPF do professor (apenas números): ");
+	scanf("%[0-9]", cpf);
+	getchar();
+	printf("///                                                                            ///\n");
+	printf("///                                                                            ///\n");
+	printf("//////////////////////////////////////////////////////////////////////////////////\n");
+	printf("\n");
+	delay(1);
+}
+	   
+	   
+	   
+void telaAvaliacaoclinica(void) {
+	char num[12];
+        char criação[11];
+	
+        sistema("clear||cls");
+        printf("\n");
+        printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+        printf("///                                                                               ///\n");
+        printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+        printf("///                  = = = = = = = = Avaliação clinica = = = = = = = =            ///\n");
+        printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+        printf("///                                                                               ///\n");
+        printf("///                  Numeração (apenas números): ");  
+        scanf("%[0-9]", num);
+        getchar();
+        printf("///                  Data da Criação (dd/mm/aaaa): ");
+        scanf("%[0-9]", criação);
+        getchar();
+        printf("///                                                                               ///\n");
+        printf("///                                                                               ///\n");
+        printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+        printf("\n");
+        delay(1);
+}
+
+	   
+	   
+void telaAvaliacaonutricional(void) {
+	char num[12];
+        char criação[11];
+	
+        sistema("clear||cls");
+        printf("\n");
+        printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+        printf("///                                                                               ///\n");
+        printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+        printf("///                  = = = = = = = = Avaliação nutricional = = = = = =            ///\n");
+        printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+        printf("///                                                                               ///\n");
+        printf("///                  Numeração (apenas números): ");  
+        scanf("%[0-9]", num);
+        getchar();
+        printf("///                  Data da Criação (dd/mm/aaaa): ");
+        scanf("%[0-9]", criação);
+        getchar();
+        printf("///                                                                               ///\n");
+        printf("///                                                                               ///\n");
+        printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+        printf("\n");
+        delay(1);
+}
+	   
+	   
+	   
+void telaDieta(void) {
+	char num[12];
+        char criação[11];
+	
+        sistema("clear||cls");
+        printf("\n");
+        printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+        printf("///                                                                               ///\n");
+        printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+        printf("///                  = = = = = = = = = = = Dieta = = = = = = = = = = =            ///\n");
+        printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+        printf("///                                                                               ///\n");
+        printf("///                  Numeração (apenas números): ");  
+        scanf("%[0-9]", num);
+        getchar();
+        printf("///                  Data da Criação (dd/mm/aaaa): ");
+        scanf("%[0-9]", criação);
+        getchar();
+        printf("///                                                                               ///\n");
+        printf("///                                                                               ///\n");
+        printf("/////////////////////////////////////////////////////////////////////////////////////\n");
+        printf("\n");
+        delay(1);
+}
+	
+
+	
  void telaSobre(void) {
     system("clear||cls");
     printf("\n");
