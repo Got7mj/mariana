@@ -18,10 +18,10 @@
 void moduloReceita(void);
 char telaMenuReceita(void);
 void telaCadastrarReceita(void);
-void telaPesquisarRceita(void);
-void telaAlterarRceita(void);
-void telaExcluirRceita(void);
+void telaPesquisarReceita(void);
+void telaAlterarReceita(void);
+void telaExcluirReceita(void);
 void CadastrarReceita(void);
 void PesquisarRceita(void);
-void AlterarRceita(void);
-void ExcluirRceita(void);
+void AlterarReceita(void);
+void ExcluirReceita(void);
