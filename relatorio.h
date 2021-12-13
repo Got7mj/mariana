@@ -1,13 +1,12 @@
-void moduloCardapio(void);
-char menuCardapio(void);
+void moduloRelatorio(void);
+char menuRelatorio(void);
 
-void telaCadastrarCardapio(void);
-void telaPesquisarCardapio(void);
-void telaAlterarCardapio(void);
-void telaExcluirCardapio(void);
+void Desenvolvimentodopaciente(void);
+void Avaliacaoclinica(void);
+void Avaliacaonutricional(void);
+void Dieta(void);
 
-void CadastrarCardapio(void);
-void PesquisarCardapio(void);
-void AlterarCardapio(void);
-void ExcluirCardapio(void);
-
+void telaDesenvolvimentodopaciete(void);
+void telaAvaliacaoclinica(void);
+void telaAvaliacaonutricional(void);
+void telaDieta(void);
